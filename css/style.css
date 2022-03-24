@@ -64,3 +64,37 @@ body{
     color: #edbc65;
     border-bottom: 2px solid #edbc65;
 }
+/* RESPONSIVE EL MENU DE NAVEGACION EN DISPOSITIVOS 1087 */
+@media (max-width: 1087px){
+     #cabecera{
+        justify-content: space-between;
+    } 
+    #logo{
+        width: 20%;
+        display: block;
+        padding-left: 20px;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+        background: #50350a;
+        opacity: 75%;
+    }
+    .menu ul li a{
+        line-height: 45px;
+        padding: 0 20px;
+        border-bottom: 2px solid #6848;
+    }
+    #mmovil{
+        display: block;
+        padding-right: 20px;
+    }
+}
+#btn-menu:checked ~ .menu{
+    transform: translateX(0%);
+}
