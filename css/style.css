@@ -122,7 +122,17 @@ body{
     top: 14%;
     height: auto;
     display: block;
+    animation: nubeone 10s linear infinite;
 }
+@keyframes nubeone{
+    from{
+        left: -30%;  
+    }
+    to{
+        left: 110%;
+
+    }
+} 
 .nube2{
     width: 100%;
     max-width: 491px;
@@ -131,6 +141,7 @@ body{
     top: 18%;
     height: auto;
     display: block;
+    animation: nubedos 10s linear infinite;
 }
 .ave1{
     display: block;
@@ -138,6 +149,14 @@ body{
     left: 28%;
     top: 22%;
 }
+@keyframes nubedos{
+    from{
+        right: -20%;
+    }
+    to{
+       right: 110%; 
+    }
+} 
 .ave2{
     display: block;
     position: absolute;
@@ -241,5 +260,45 @@ h1{
     }
     .ave2{
         top: 65%;
+    }
+}
+
+
+.container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background-color: #ffff;
+}
+.spiderman{
+    width: 300px;
+    margin-top: 60px;
+    animation: hombrearaña 1s alternate infinite;
+}
+@keyframes hombrearaña{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.shadow{
+    width: 200px;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.692);
+    animation: sombra 1s alternate infinite;
+}
+@keyframes sombra{
+    from{
+        transform: scale(0.6);
+        opacity: 0.;
+    }
+    to{
+        transform: scale(1);
     }
 }
