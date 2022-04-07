@@ -436,6 +436,9 @@ h1{
     padding-top: 150px;
     padding-bottom: 150px;
 }
+.queofrecemos .scroll{
+    margin-top: 30px;
+}
 .cajatitulososcuro{
     width: 100%;
     max-width: 1100px;
@@ -500,4 +503,50 @@ h1{
     .cajatitulososcuro h3{
         font-size: 20px;
     }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++FOOTER++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+#piepagina{
+    background-color: #cc982a;
+    padding: 2% 0;
+}
+.cajapie{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#piepagina p{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFAFA;
+}
+#piepagina ul{
+    margin: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#piepagina ul li{
+    padding: 0 2%;
+}
+#piepagina ul li a{
+    display: block;
+    width: 43px;
+    height: 43px;
+    line-height: 40px;
+    background-color: #d54c00;
+    color: #FFFAFA;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: all 0.8s;
+}
+#piepagina ul li a:hover{
+    background-color: #684815;
 }
