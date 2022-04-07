@@ -3,7 +3,7 @@
 
 body{
     margin: 0;
-    background-color: #38332b;
+    background-color: #FFFFFF;
 }
 *{
     box-sizing: border-box;
@@ -109,6 +109,7 @@ body{
     background-image: url("../img/banner1.png");
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
     padding-top: 150px;
@@ -263,42 +264,240 @@ h1{
     }
 }
 
-
-.container{
-    flex-direction: column;
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++QUE HACEMOS++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+.quehacemos{
+   background-color: #FFFFFF; 
+   background-image: url("../img/fondo-ciudad.png");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   position: relative;
+   overflow: hidden;
+   padding-top: 150px;
+   padding-bottom: 150px;
+}
+.nube-gris1{
+    width: 100%;
+    max-width: 396px;
+    position: absolute;
+    left: 2%;
+    top: 13%;
+    height: auto;
+    display: block;
+}
+.nube-gris2{
+    width: 100%;
+    max-width: 370px;
+    position: absolute;
+    right: 2%;
+    top: 18%;
+    height: auto;
+    display: block;
+}
+.contenidos{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.cajatitulos{
+    border-bottom: 4px solid #FFBB00;
+    padding: 10px 0;
+    margin-bottom: 29px;
+}
+.cajatitulos h2{
+    font-family: 'Aref Ruqaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 79px;
+    text-align: center;
+    color: #1D1D1D;
+}
+.cajatitulos h3{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #707070;
+}
+.cajacolumnas{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
-    background-color: #ffff;
 }
-.spiderman{
-    width: 300px;
-    margin-top: 60px;
-    animation: hombrearaña 1s alternate infinite;
+.columnas{
+    width: 25%;
+    padding: 0 2%;
 }
-@keyframes hombrearaña{
-    from{
-        transform: translateY(-100%);
+.columnas h2{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #919191;
+}
+.columnas img{
+    display: block;
+    margin: auto;
+}
+.columnas p{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #919191;
+}
+#nubeamarilla{
+    width: 100%;
+    max-width: 776px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("../img/nube-amarilla.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 204px;
+    padding: 7% 3%;
+}
+#nubeamarilla p{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FCFCFC;
+}
+/* RESPONSIVE QUE HACEMOS */
+@media (max-width: 800px){
+    .quehacemos{
+        background-size: 1300px auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    to{
-        transform: translateY(0);
+    .clientes{
+        background-size: 1300px auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contactenos{
+        background-size: 13300px auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .nube-gris1{
+        max-width: 146px;
+        top: 10%;
+    }
+    .nube-gris2{
+        max-width: 146px;
+        top: 8%;
+    }
+    .cajacolumnas{
+        flex-direction: column;
+    }
+    .columnas{
+        width: 95%;
+        padding: 0 2%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #nubeamarilla{
+        width: 95%;
+        padding: 2% 3%;
+        background: #FFBB00;
+        border-radius: 10px;
+        height: auto;
+        margin: auto;
+    }
+    .cajatitulos h2{
+        font-size: 24px;
+    }
+    .cajatitulos h3{
+        font-size: 20px;
+    }
+    .scroll{
+        padding-top: 20px;
     }
 }
-.shadow{
-    width: 200px;
-    height: 20px;
-    margin: 20px 0;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.692);
-    animation: sombra 1s alternate infinite;
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++QUE OFRECEMOS++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+.queofrecemos{
+    background-color: #38332b;
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
-@keyframes sombra{
-    from{
-        transform: scale(0.6);
-        opacity: 0.;
+.cajatitulososcuro{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    border-bottom: 4px solid #FFBB00;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.cajatitulososcuro h2{
+    font-family: 'Aref Ruqaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #F4EDED;
+}
+.cajatitulososcuro h3{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #FAF7F7;
+}
+.servicios{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.servicios h2{
+    display: block;
+    background: #3C3C3B;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-family: 'Chivo';
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0%;
+    text-decoration: none;
+}
+.servicios li{
+    margin-right: 1%;
+}
+.servicios li a{
+    text-decoration: none;
+}
+/* RESPONSIVE PARA 800PX */
+@media (max-width: 800px)
+{
+    .queofrecemos{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    to{
-        transform: scale(1);
+    .cajatitulososcuro h2{
+        font-size: 24px;
+    }
+    .cajatitulososcuro h3{
+        font-size: 20px;
     }
 }
